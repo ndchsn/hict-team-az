@@ -4,8 +4,142 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Team</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet"> -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("https://mediaasuransinews.co.id/wp-content/uploads/2021/10/Multipolar.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: 'Nunito', sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    .team-section {
+      text-align: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-head {
+      font-size: 2.5em;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .section-subhead {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .center-head {
+      margin-bottom: 40px;
+    }
+
+    .team-card {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      width: 250px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      margin: 10px 0 5px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0 0 10px;
+      color: #777;
+    }
+
+    .social-links a img {
+      width: 20px;
+      margin: 0 5px;
+    }
+
+    @media (max-width: 768px) {
+      .team-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .location-card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      margin-top: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .location-card h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .location-card p {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .maps-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4285F4;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .maps-button:hover {
+      background-color: #3367D6;
+    }
+
+    .error-card {
+      background-color: #ffe6e6;
+      padding: 15px;
+      margin-top: 20px;
+      border: 1px solid #ff9999;
+      border-radius: 10px;
+      text-align: center;
+      color: #cc0000;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <div class="team-section">
@@ -25,6 +159,7 @@
     </div>
 
     <div class="team-grid">
+      <!-- Siti Munawaroh -->
       <div class="team-card">
         <img class="team-img" src="https://media.licdn.com/dms/image/v2/D5603AQF9CFGP9Xyr-Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729481927071?e=1750896000&v=beta&t=P2KcJAy_y_HdztGPt0Y89lpHitbimER191hubQXqy6U" alt="Head">
         <h3>Siti Munawaroh</h3>
@@ -34,6 +169,7 @@
           <a href="https://wa.me/6283806736001"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" width="20" /></a>
         </div>
       </div>
+      <!-- Deni Teguh -->
       <div class="team-card">
         <img class="team-img" src="https://media.licdn.com/dms/image/v2/D5603AQFgsrbw1FM-qQ/profile-displayphoto-shrink_400_400/B56ZYOIQyTHQAg-/0/1743993770202?e=1750896000&v=beta&t=0gRhCDss3Je6FSCoU_zTjJTw8hW06LY4ao9Vzxuqmys" alt="Head">
         <h3>Deni Teguh</h3>
@@ -43,6 +179,7 @@
           <a href="https://wa.me/6285726278542"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" width="20" /></a>
         </div>
       </div>
+      <!-- Andi -->
       <div class="team-card">
         <img class="team-img" src="https://media.licdn.com/dms/image/v2/D5603AQE2bSJLtqW9FA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707888714039?e=1750896000&v=beta&t=OTtOh94jncHLTU8z-c-kweR5scWHiR3UHrVEXZSiWp4" alt="Head">
         <h3>Andi Muhammad Ichsan</h3>
@@ -52,6 +189,7 @@
           <a href="https://wa.me/6281231620512"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" width="20" /></a>
         </div>
       </div>
+      <!-- Wilbert -->
       <div class="team-card">
         <img class="team-img" src="https://media.licdn.com/dms/image/v2/D5603AQEWGO3vU2TF7Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718883290058?e=1750896000&v=beta&t=J67HnSBsYWhXBUDJo-2d-B_Ds4nDpJ5aIbnbaQ4uOt0" alt="Head">
         <h3>Wilbert Josef Tanumihardja</h3>
@@ -61,6 +199,7 @@
           <a href="https://wa.me/6289685549546"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" width="20" /></a>
         </div>
       </div>
+      <!-- Lucky -->
       <div class="team-card">
         <img class="team-img" src="https://media.licdn.com/dms/image/v2/D5603AQFGZa6E-LRRDg/profile-displayphoto-shrink_400_400/B56ZWU_GcfHEAg-/0/1741961325472?e=1750896000&v=beta&t=zJNl0tYZJ1uFF4vAlSnM2ExS5cMKRIy6qHjIF5xEZPA" alt="Head">
         <h3>Lucky Setiawan</h3>
@@ -70,6 +209,7 @@
           <a href="https://wa.me/6281413504948"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" width="20" /></a>
         </div>
       </div>
+      <!-- Christian -->
       <div class="team-card">
         <img class="team-img" src="https://media.licdn.com/dms/image/v2/D5603AQF6CNZMcLaCgA/profile-displayphoto-shrink_400_400/B56ZYzi5W2GcAk-/0/1744621508442?e=1751500800&v=beta&t=6zTBieGAdO4xtb-ca0jafQv2AxamP9q4coIeEjaOCNk" alt="Head">
         <h3>Christian Kasih Pratama</h3>
@@ -81,6 +221,5 @@
       </div>
     </div>
   </div>
-  
 </body>
 </html>
